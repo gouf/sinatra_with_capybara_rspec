@@ -1,7 +1,3 @@
-# require 'cpaybara/rails'
-# require 'capybara/cucumber'
-require 'capybara'
-require_relative '../lib/main.rb'
 Capybara.app = MyApp
 # Capybara.default_driver = :selenium
 Capybara.app_host = 'http://localhost:3000'
