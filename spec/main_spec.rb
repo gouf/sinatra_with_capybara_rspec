@@ -11,6 +11,6 @@ describe 'Show Top Page' do
     page.execute_script(script)
     save_screenshot(file_path, full: true)
     expect(page).to have_content 'click'
-    expect(page.find(:css, 'form > input')).to be_truthy
+    expect(page).to have_css('form > input')
   end
 end
